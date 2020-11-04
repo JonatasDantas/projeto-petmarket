@@ -1,0 +1,91 @@
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+  
+header .navbar{
+  border-radius: 0;
+  margin: 0;
+}
+
+.app-navbar {
+  display: flex;
+  padding: 4px 20px;
+}
+
+.app-logo img {
+  height: 70px;
+  width: auto;
+  margin-right: 5px;
+}
+
+.search-box {
+  padding: 12px;
+}
+
+main{
+  min-height: 500px;
+  padding: 50px 0;
+}
+
+footer{
+  padding: 30px 0;
+  font-size: 14px;
+  color:  #BBB;
+  background: #222;
+  text-align: center;
+}
+
+.field--select-block .field__select-native,
+.field--select-block .field__select-custom,
+.field__pin-read,
+.text-field,
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type="tel"],
+input[type='number'] {
+  font-size: 2rem;
+  border-radius: .3rem;
+  font-weight: 300;
+  padding: 0.35em 0.5em 0.35em;
+  background: rgba(198, 198, 198, 0.2);
+  border: 1px solid transparent;
+  transition: border-color 0.2s;
+  width: 100%;
+}
+.field--select-block .field__select-native:hover,
+.field--select-block .field__select-custom:hover,
+.field__pin-read:hover,
+.text-field:hover,
+input[type='text']:hover,
+input[type='email']:hover,
+input[type='password']:hover,
+input[type="tel"]:hover,
+input[type='number']:hover {
+  border-color: #C6C6C6
+}
+.field--select-block .field__select-native:focus,
+.field--select-block .field__select-custom:focus,
+.field__pin-read:focus,
+.field--select-block .focus.field__select-native,
+.field--select-block .focus.field__select-custom,
+.focus.field__pin-read,
+.text-field:focus,
+.text-field.focus,
+input[type='text']:focus,
+input[type='text'].focus,
+input[type='email']:focus,
+input[type='email'].focus,
+input[type='password']:focus,
+input[type='password'].focus,
+input[type="tel"]:focus,
+input[type="tel"].focus,
+input[type='number']:focus,
+input[type='number'].focus {
+  border-color: #8e8c8c;
+  outline: none
+}
+fieldset, ol, ul {
+    padding: 0;
+}
