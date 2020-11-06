@@ -36,3 +36,8 @@ main {
 .app {
   padding: 30px;
 }
+
+.card-img-top{
+  max-width: 600px;
+  height: 400px;
+}
