@@ -41,3 +41,7 @@ main {
   max-width: 600px;
   height: 400px;
 }
+
+.divider {
+  margin: 1rem 44%;
+}

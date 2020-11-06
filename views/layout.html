@@ -17,14 +17,13 @@
 
 <body>
     <header>
-
         <nav class="blue lighten-5">
             <div class="nav-wrapper">
-                <a class="navbar-brand" href="index.html">PetMarket</a>
+                <a class="navbar-brand" href="/">PetMarket</a>
 
                 <form>
                     <div class="input-field">
-                        <input id="search" type="search" required>
+                        <input id="search" type="search" placeholder="Buscar qualquer produto" required>
                         <label class="label-icon" for="search"><i class="material-icons"
                                 style="color: rgba(0,0,0,0.87);">search</i></label>
                         <i class="material-icons">close</i>
@@ -34,39 +33,38 @@
             <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </nav>
 
+        <!-- usando o for da biblioteca EJS, para não ter que escrever o html de cada item do menu na mão. Dados são passados no routes.js
+        olhar o exemplo do artigo https://www.codementor.io/@nulldreams/utilizando-a-engine-ejs-para-aplicacoes-em-nodejs-dok81l3si -->
         <ul id="slide-out" class="sidenav sidenav-fixed blue lighten-5">
-            <li>
-                <a class="waves-effect" href="#!">
-                    <i class="material-icons">monetization_on</i> Promoções
-                </a>
-            </li>
-
-            <li>
-                <ul class="collapsible collapsible-accordion">
+            <% for(item of menuItems) {%>
+                <% if (!item.children || item.children.length == 0) { %>
                     <li>
-                        <a class="collapsible-header">
-                            <i class="material-icons">pets</i>
-                            Petshops
-                            <i class="material-icons" style="float: right;">arrow_drop_down</i>
-
+                        <a class="waves-effect" href="#!">
+                            <i class="material-icons"><%= item.icon %></i> <%= item.name %>
                         </a>
-                        <div class="collapsible-body">
-                            <ul>
-                                <li><a href="#!">Ração</a></li>
-                                <li><a href="#!">Brinquedos</a></li>
-                                <li><a href="#!">Casinhas</a></li>
-                                <li><a href="#!">Roupinhas</a></li>
-                            </ul>
-                        </div>
                     </li>
-                </ul>
-            </li>
-
-            <li>
-                <a class="waves-effect" href="#!">
-                    <i class="material-icons">medical_services</i> Veterinários
-                </a>
-            </li>
+                <% } else {%>
+                    <li>
+                        <ul class="collapsible collapsible-accordion">
+                            <li>
+                                <a class="collapsible-header">
+                                    <i class="material-icons"><%= item.icon %></i>
+                                    <%= item.name %>
+                                    <i class="material-icons" style="float: right;">arrow_drop_down</i>
+        
+                                </a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <% for(subItem of item.children) {%>
+                                            <li><a href="#!"><%= subItem.name %></a></li>
+                                        <% } %>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                <% } %>
+            <% } %>
 
             <li>
                 <div class="divider"></div>

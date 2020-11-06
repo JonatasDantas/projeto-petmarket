@@ -1,0 +1,33 @@
+.home {
+    text-align: center;
+}
+
+.home .welcoming {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.home .welcoming-text {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.categories {
+    margin-top: 2rem;
+}
+
+.categories .category .title {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.categories .category .stores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.categories .category .stores .card-image img {
+    height: 100%;
+    object-fit: cover;
+}
