@@ -61,8 +61,14 @@ class Router {
             });
         })
 
-        routes.get("/catalog", (req, res) => {
+        routes.get("/catalogo", (req, res) => {
             res.render('petshop-catalog.html', {
+                menuItems,
+            });
+        })
+
+        routes.get("/produto", (req, res) => {
+            res.render('produto.html', {
                 menuItems,
             });
         })
