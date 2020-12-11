@@ -21,16 +21,6 @@
                             <button class="btn btn-success btn-lg my-2 my-sm-0 buy">Comprar</button>
                         </div>
                     </div>
-
-                    <div class="chat-info d-flex mt-4">
-                        <div class="col-6 p-0">
-                            <p>Alguma dúvida sobre o produto?</p>
-                            <p>Fale com o vendedor pelo nosso chat</p>
-                        </div>
-                        <div class="col-6 d-flex justify-content-center">
-                            <button class="btn btn-outline-secondary my-2 my-sm-0 chat">chat</button>
-                        </div>
-                    </div>
                 </div>
             </div>
 
@@ -128,3 +118,33 @@
         </div>
     </div>
 </div>
+
+<!--//Funcao que altera a pagina do padrao do produto com suas proprias infos
+function atualizaInfos(){
+    var queryString = decodeURIComponent(window.location.search);
+    var info = [];
+    queryString = queryString.replace(/\+/g, ' ');
+    queryString = queryString.substring(1);
+    var queries = queryString.split("&");
+
+    for (var i = 0; i < queries.length; i++){
+        var aux = queries[i].split("=")[1];
+        info.push(aux);
+    }
+
+    $(".product-name h4").text(info[0]);
+    nomeProduto = info[0];
+    document.title = nomeProduto;
+    $(".product-details span").text(info[1]);
+    $(".product-price span").text("R$" + info[2].replace(',','.'));
+    $(".product-img img").attr("src",info[3]);
+    donoProdutoId = info[4]
+}
+//metodo para preencher o html com o produto criado
+function fillProduto(produto) {
+    var queryString = "?nome=" + produto.nomeProduto + "&descricao=" + produto.descricao + "&valor=" + produto.valorProduto + "&img=" + produto.urlImagem + "&donoId=" + produto.donoId;
+    queryString = queryString.replace(/ /g, "+");
+
+    $('.class').append('<div class="card mb-3"><div class="card-body"><div class="row"><div class="col-12 col-sm-8 mb-3"><div class="valor "><div class="col">Valor: <span >' + produto.valorProduto + '</span></div></div><div class="Nomeproduto "><div class="col"> <a class="nome-produto-link" href=produto.html' + queryString + '> <h4 >' + produto.nomeProduto + '</h4></a></div></div> <div class = "descricao"><div>Descrição</div> <br/><span>' + produto.descricao + '</span></div>               </div>  <div class="col-12 col-sm-4"><div class = "img"><img class="img-thumbnail"  src="' + produto.urlImagem + '" /></div></div>           </div></div></div>');
+
+}--> 
