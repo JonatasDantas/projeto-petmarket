@@ -13,7 +13,7 @@
                 <hr/>
                 <div class="stores">
                     <% for(store of category.stores) {%>
-                        <a href="/catalogo">
+                        <a href="/catalogo?store=<%= store.id %>">
                             <div class="card small">
                                 <div class="card-image waves-effect waves-block waves-light">
                                   <img class="activator" src="<%= store.img %>">
