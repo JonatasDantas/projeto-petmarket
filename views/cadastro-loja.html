@@ -1,0 +1,39 @@
+<%- contentFor('app') %>
+<div class="container">
+    <form>
+      <div class="row">
+        <div class="col-25">
+          <label for="cnpj">CNPJ</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="cnpj" name="cnpj-empresa" placeholder="CNPJ do seu petsop...">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="endereco">Endereço do seu PetShop</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="endereco" name="endereco-empresa" placeholder="Av/Rua, Número - Bairro - Cidade">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="email">Email</label>
+        </div>
+        <div class="col-75">
+            <input type="text" id="email" name="email-empresa" placeholder="Email para contato...">
+        </div>
+      </div>
+      <div class="row">
+        <button class="btn btn-success cadastro-button">Confirmar cadastro</button>
+      </div>
+    </form>
+</div>
+</body>
+
+<script>
+    $(".cadastro-button").on("click", function(){
+        alert("Obrigado por vender com a gente! Vamos verificar seus dados e retornaremos os próximos passos no email cadastrado :)");
+    });
+</script>

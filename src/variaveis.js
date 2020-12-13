@@ -58,7 +58,29 @@ const stores = [
         time: "30-40 min",
         tax: "R$7,50",
         menuItemId: 1,
-        products: []
+        products: [
+            {
+                id: 1,
+                nomeProduto: "Ração Pedigree para cachorro",
+                descricao: "Ração seca pedigree de 20kg para cachorro adulto.",
+                valorProduto: "R$195,00",
+                urlImagem: "https://www.petlove.com.br/images/products/223357/large/Ra%C3%A7%C3%A3o_Seca_Pedigree_para_C%C3%A3es_Adultos_Ra%C3%A7as_Pequenas_310484_1_20kg.jpg?1587403804"
+            },
+            {
+                id: 2,
+                nomeProduto: "Bolinha de tenis de borracha",
+                descricao: "Bolinha de tenis de brinquedo feito de borracha. Ideal para cachorros pequenos.",
+                valorProduto: "R$19,99",
+                urlImagem: "https://www.extra-imagens.com.br/PetShop/cachorro/BrinquedosparaCaes/1501182823/1211465984/brinquedo-para-cachorro-bola-de-tenis-com-som-kit-com-2-pcs-1501182823.jpg"
+            },
+            {
+                id: 3,
+                nomeProduto: "Coleira para Cachorro",
+                descricao: "Coleira estilizada ideal para cachorros de pequeno porte.",
+                valorProduto: "R$59,99",
+                urlImagem: "https://www.casasbahia-imagens.com.br/PetShop/cachorro/ColeirasGuias/12986553/1233496806/coleira-peitoral-para-cachorro-com-guia-adaptador-azul-m-12986553.jpg"
+            },
+        ]
     },
     {
         id: 3,
@@ -67,7 +89,29 @@ const stores = [
         time: "60-70 min",
         tax: "R$12,00",
         menuItemId: 1,
-        products: []
+        products: [
+            {
+                id: 1,
+                nomeProduto: "Ração Pedigree para cachorro",
+                descricao: "Ração seca pedigree de 20kg para cachorro adulto.",
+                valorProduto: "R$195,00",
+                urlImagem: "https://www.petlove.com.br/images/products/223357/large/Ra%C3%A7%C3%A3o_Seca_Pedigree_para_C%C3%A3es_Adultos_Ra%C3%A7as_Pequenas_310484_1_20kg.jpg?1587403804"
+            },
+            {
+                id: 2,
+                nomeProduto: "Bolinha de tenis de borracha",
+                descricao: "Bolinha de tenis de brinquedo feito de borracha. Ideal para cachorros pequenos.",
+                valorProduto: "R$19,99",
+                urlImagem: "https://www.extra-imagens.com.br/PetShop/cachorro/BrinquedosparaCaes/1501182823/1211465984/brinquedo-para-cachorro-bola-de-tenis-com-som-kit-com-2-pcs-1501182823.jpg"
+            },
+            {
+                id: 3,
+                nomeProduto: "Coleira para Cachorro",
+                descricao: "Coleira estilizada ideal para cachorros de pequeno porte.",
+                valorProduto: "R$59,99",
+                urlImagem: "https://www.casasbahia-imagens.com.br/PetShop/cachorro/ColeirasGuias/12986553/1233496806/coleira-peitoral-para-cachorro-com-guia-adaptador-azul-m-12986553.jpg"
+            },
+        ]
     },
     {
         id: 4,
@@ -76,7 +120,29 @@ const stores = [
         time: "20-25 min",
         tax: "R$5,00",
         menuItemId: 1,
-        products: []
+        products: [
+            {
+                id: 1,
+                nomeProduto: "Ração Pedigree para cachorro",
+                descricao: "Ração seca pedigree de 20kg para cachorro adulto.",
+                valorProduto: "R$195,00",
+                urlImagem: "https://www.petlove.com.br/images/products/223357/large/Ra%C3%A7%C3%A3o_Seca_Pedigree_para_C%C3%A3es_Adultos_Ra%C3%A7as_Pequenas_310484_1_20kg.jpg?1587403804"
+            },
+            {
+                id: 2,
+                nomeProduto: "Bolinha de tenis de borracha",
+                descricao: "Bolinha de tenis de brinquedo feito de borracha. Ideal para cachorros pequenos.",
+                valorProduto: "R$19,99",
+                urlImagem: "https://www.extra-imagens.com.br/PetShop/cachorro/BrinquedosparaCaes/1501182823/1211465984/brinquedo-para-cachorro-bola-de-tenis-com-som-kit-com-2-pcs-1501182823.jpg"
+            },
+            {
+                id: 3,
+                nomeProduto: "Coleira para Cachorro",
+                descricao: "Coleira estilizada ideal para cachorros de pequeno porte.",
+                valorProduto: "R$59,99",
+                urlImagem: "https://www.casasbahia-imagens.com.br/PetShop/cachorro/ColeirasGuias/12986553/1233496806/coleira-peitoral-para-cachorro-com-guia-adaptador-azul-m-12986553.jpg"
+            },
+        ]
     }
 ];
 

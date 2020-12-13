@@ -141,7 +141,7 @@
         nomeProduto = info[0];
         document.title = nomeProduto;
         $(".product-details span").text(info[1]);
-        $(".product-price span").text("R$" + info[2].replace(',','.'));
+        $(".product-price").text(info[2].replace(',','.'));
         $(".product-img img").attr("src",info[3]);
         donoProdutoId = info[4]
     }

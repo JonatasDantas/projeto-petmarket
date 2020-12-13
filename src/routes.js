@@ -26,7 +26,13 @@ class Router {
                 menuItems,
             });
         })
-
+        /*
+        routes.get("/cadastro-loja", (req, res) => {
+            res.render('/cadastro-loja.html', {
+    
+            });
+        })
+        */
         return routes;
     }
 }
